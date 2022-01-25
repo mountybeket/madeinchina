@@ -6,7 +6,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 bot = telebot.TeleBot(config.token) #должно быть в начале. Вызывает токен
-cred = credentials.Certificate('C:/Users/Kokoto/Documents/Github/madeinchina/key.json')
+cred = credentials.Certificate("/home/kokoto/uba/key.json")
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://chinabiznesbot.firebaseio.com/' })
 
